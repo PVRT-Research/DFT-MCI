@@ -1,0 +1,10 @@
+*.o
+*.mod
+*.exe
+*.out
+*.fchk
+*.wfx
+*.molden
+src/*.o
+ppot/*.o
+noloco/

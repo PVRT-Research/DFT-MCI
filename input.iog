@@ -1,0 +1,11 @@
+density 	h2o.fchk
+exchange 	mgga_x_m11_l
+correlation	mgga_c_m11_l
+grid 		99 590
+doINT       3 
+MClvl       4 
+MCprc       1.d-5
+boxscale    40.d0
+doJ 		0
+doK 		0
+doGrimme	0

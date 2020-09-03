@@ -1,0 +1,16 @@
+!tentative input file for DFT:IoG
+!
+density 	h2.fchk !name of the QC engine output file (a lot are already supported via Multiwfn)
+exchange 	gga_x_pbe !name of KS exchange functional (libxc standard naming)
+correlation	gga_c_pbe !name of KS correlation functional (libxc standard naming)
+doINT       3 !select the type of integration: =0 no integration, =1 do grid integration, =2 do MC integration, =3 do both
+MClvl       4 !selects the MC algorithm: 1=vegas, 2=suave, 3=divonne, 4=cuhre. (Cuhre is default, and usually the fastest/best)
+MCprc       1.d-05 !required precision of the Monte Carlo integration in hartrees
+grid 		99,590 !number of radial and angular point of Lebedev grid
+doJ 		0 !or 1 to turn on calculation of Coulomb term (it takes time!)
+doJMC       0 !or 1 to turn on calculation of Coulomb term using 6-dimensional monte carlo integration (it takes even more time, and tinkering with the options!)
+doK         0 !or 1 to turn on calculation of HF Exchange term using 6-dimensional monte carlo integration (it requires tinkering with the options)
+doGrimme    0 !or 1 for -D3, gCP and BSE corrections, or 2 for Grimme with extra printouts
+doDFTC      0 !or 1 for DFT-C corrections
+
+
